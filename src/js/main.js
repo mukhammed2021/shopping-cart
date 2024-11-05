@@ -91,11 +91,16 @@ function isInCart(product, id) {
 }
 
 function addToCart() {
-   cartEmptyText.innerText = "";
    updateCart();
 }
 
 function updateCart() {
+   if (cart.length) {
+      cartEmptyText.innerText = "";
+   } else {
+      cartEmptyText.innerText = "Your cart is empty";
+   }
+
    const cartItemHTML = cart
       .map(
          (product) =>
