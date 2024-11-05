@@ -1,0 +1,46 @@
+@use "sass:math";
+@import "./base/mixins";
+@import "./base/colors";
+@import "./base/reset";
+
+body {
+   font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+}
+
+button {
+   @include reset-button;
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+   @supports (overflow: clip) {
+      overflow: clip;
+   }
+   > main {
+      flex: 1 1 auto;
+   }
+}
+
+[class*="container"] {
+   max-width: toRem(1300);
+   margin-inline: auto;
+   padding-inline: toRem(15);
+}
+
+@import "base";
+@import "common";
+@import "home";

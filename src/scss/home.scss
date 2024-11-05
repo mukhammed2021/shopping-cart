@@ -1,0 +1,193 @@
+.main {
+   // .main__container
+   &__container {
+      padding-block: toRem(16);
+   }
+   &__body {
+      display: flex;
+      gap: toRem(32);
+      @media (max-width: toEm(1024)) {
+         flex-direction: column;
+      }
+   }
+}
+.title {
+   font-size: toRem(30);
+   &:not(:last-child) {
+      margin-bottom: toRem(24);
+   }
+}
+.products {
+   @media (min-width: toEm(1024)) {
+      flex: 0 1 75%;
+   }
+   @media (max-width: toEm(1024)) {
+   }
+   // .products__items
+   &__items {
+      display: grid;
+      gap: toRem(24);
+      grid-template-columns: repeat(3, 1fr);
+      @media (max-width: toEm(768)) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: toEm(640)) {
+         grid-template-columns: 1fr;
+      }
+   }
+   // .products__item
+   &__item {
+   }
+}
+.cart {
+   @media (min-width: toEm(1024)) {
+      flex: 0 1 25%;
+   }
+   // .cart__body
+   &__body {
+      position: sticky;
+      top: toRem(16);
+      padding: toRem(24);
+      border: toRem(1) solid hsl(var(--clr-border));
+      border-radius: toRem(8);
+      display: flex;
+      flex-direction: column;
+   }
+   // .cart__title
+   &__title {
+      font-size: toRem(24);
+      font-weight: 700;
+      line-height: 133.333333%; /* 32/24 */
+      &:not(:last-child) {
+         margin-bottom: toRem(16);
+      }
+   }
+   // .cart__items
+   &__items {
+      flex: 1 1 auto;
+   }
+   // .cart__item
+   &__item {
+   }
+   // .cart__footer
+   &__footer {
+      border-top: toRem(1) solid hsl(var(--clr-border));
+      margin-top: toRem(24);
+      padding-top: toRem(16);
+   }
+   // .cart__line
+   &__line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span {
+         font-weight: 600;
+      }
+      &:not(:last-child) {
+         margin-bottom: toRem(16);
+      }
+   }
+   // .cart__total-price
+   &__total-price {
+      font-size: toRem(18);
+      font-weight: 700;
+   }
+   // .cart__button
+   &__button {
+   }
+   // .cart__text
+   &__text {
+      text-align: center;
+      color: hsl(var(--clr-gray));
+   }
+}
+.item-cart {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: toRem(15);
+   // .item-cart__info
+   &__info {
+   }
+   // .item-cart__title
+   &__title {
+      font-weight: 600;
+   }
+   // .item-cart__price
+   &__price {
+      font-size: toRem(14);
+      line-height: 142.857143%; /* 20/14 */
+      color: hsl(var(--clr-gray));
+   }
+   // .item-cart__actions
+   &__actions {
+      display: flex;
+      align-items: center;
+      gap: toRem(8);
+   }
+   // .item-cart__quantity-block
+   &__quantity-block {
+      display: flex;
+      align-items: center;
+      gap: toRem(8);
+   }
+   // .item-cart__button
+   &__button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: toRem(40);
+      height: toRem(40);
+      border-radius: toRem(6);
+      border: toRem(1) solid hsl(var(--clr-border));
+      // .item-cart__button--minus
+      &--minus {
+      }
+      // .item-cart__button--plus
+      &--plus {
+      }
+      // .item-cart__button--delete
+      &--delete {
+      }
+   }
+   // .item-cart__quantity
+   &__quantity {
+   }
+}
+
+.item-product {
+   padding: toRem(16);
+   border: toRem(1) solid hsl(var(--clr-border));
+   border-radius: toRem(8);
+   // .item-product__image
+   &__image {
+      border-radius: toRem(6);
+      overflow: hidden;
+      &:not(:last-child) {
+         margin-bottom: toRem(16);
+      }
+      img {
+         aspect-ratio: 1;
+         height: toRem(192);
+      }
+   }
+   // .item-product__title
+   &__title {
+      font-size: toRem(20);
+      line-height: 140%; /* 28/20 */
+      font-weight: 600;
+      &:not(:last-child) {
+         margin-bottom: toRem(8);
+      }
+   }
+   // .item-product__price
+   &__price {
+      color: hsl(var(--clr-gray));
+      &:not(:last-child) {
+         margin-bottom: toRem(16);
+      }
+   }
+   // .item-product__button
+   &__button {
+   }
+}

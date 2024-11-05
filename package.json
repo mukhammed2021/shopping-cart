@@ -1,0 +1,21 @@
+{
+   "name": "shopping-cart",
+   "private": true,
+   "version": "0.0.0",
+   "type": "module",
+   "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+   },
+   "devDependencies": {
+      "postcss-sort-media-queries": "^5.2.0",
+      "sass-embedded": "^1.77.8",
+      "vite": "^5.4.0",
+      "vite-plugin-html-inject": "^1.1.2",
+      "vite-plugin-svg-spriter": "1.0.0"
+   },
+   "dependencies": {
+      "autoprefixer": "^10.4.20"
+   }
+}

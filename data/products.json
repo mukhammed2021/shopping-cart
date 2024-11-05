@@ -1,0 +1,44 @@
+[
+   {
+      "id": 0,
+      "src": "images/leather-jacket.webp",
+      "title": "Leather Jacket",
+      "quantity": 1,
+      "price": 199
+   },
+   {
+      "id": 1,
+      "src": "images/baseball-cap.jpeg",
+      "title": "Baseball Cap",
+      "quantity": 1,
+      "price": 20
+   },
+   {
+      "id": 2,
+      "src": "images/denim-jeans.jpg",
+      "title": "Denim Jeans",
+      "quantity": 1,
+      "price": 97
+   },
+   {
+      "id": 3,
+      "src": "images/sunglasses.webp",
+      "title": "Sunglasses",
+      "quantity": 1,
+      "price": 120
+   },
+   {
+      "id": 4,
+      "src": "images/t-shirt.jpg",
+      "title": "T-Shirt",
+      "quantity": 1,
+      "price": 77
+   },
+   {
+      "id": 5,
+      "src": "images/sneakers.jpg",
+      "title": "Sneakers",
+      "quantity": 1,
+      "price": 57
+   }
+]

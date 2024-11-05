@@ -1,0 +1,27 @@
+.button {
+   background-color: hsl(var(--clr-black));
+   color: hsl(var(--clr-white));
+   font-weight: 500;
+   padding: toRem(8) toRem(16);
+   font-size: toRem(14);
+   border-radius: toRem(6);
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   gap: toRem(8);
+   white-space: nowrap;
+   line-height: 142.857143%; /* 20/14 */
+   width: 100%;
+   height: toRem(40);
+   transition: background-color 0.2s;
+   @media (any-hover: hover) {
+      &:hover {
+         background-color: hsl(var(--clr-black) / 0.9);
+      }
+   }
+}
+
+.svg-icon {
+   width: toRem(16);
+   height: toRem(16);
+}

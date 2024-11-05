@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>JS Vite Template</title>
+   </head>
+   <body>
+      <div class="wrapper">
+         <load src="src/html/header.html" />
+         <main class="main">
+            <div class="main__container">
+               <h1 class="title">Our Products</h1>
+               <div class="main__body">
+                  <section class="products">
+                     <div class="products__items"></div>
+                  </section>
+                  <div class="cart">
+                     <div class="cart__body">
+                        <h2 class="cart__title">Cart</h2>
+                        <p class="cart__text">Your cart is empty</p>
+                        <div class="cart__items"></div>
+                        <div class="cart__footer">
+                           <div class="cart__line">
+                              <span>Total:</span>
+                              <div class="cart__total-price">$<span>0</span></div>
+                           </div>
+                           <button type="button" class="cart__button button">Checkout</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+         <load src="src/html/footer.html" />
+      </div>
+      <script type="module" src="/src/js/main.js"></script>
+   </body>
+</html>

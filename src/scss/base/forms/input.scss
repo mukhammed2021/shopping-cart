@@ -1,0 +1,20 @@
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+   appearance: none;
+}
+
+.input {
+   display: block;
+   width: 100%;
+   caret-color: inherit;
+   border: 1px solid #eee;
+   &[placeholder] {
+      &::placeholder {
+         transition: opacity 0.3s;
+      }
+      &:focus-visible::placeholder {
+         opacity: 0;
+      }
+   }
+}
